@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aswin Suresh | Financial Data Engineer</title>
+    <meta name="description" content="Aswin Suresh — Financial Data Engineer at HDFC Bank, MBA Data Analytics, building data-driven business solutions." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <nav id="desktop-nav" data-aos="fade-down" data-aos-duration="800">
+      <div class="logo">
+        <span class="logo-badge">AS</span>
+        Aswin Suresh
+      </div>
+      <div style="display:flex; align-items:center; gap:1.5rem;">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#global">Global</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </div>
+    </nav>
+    <nav id="hamburger-nav" data-aos="fade-down" data-aos-duration="800">
+      <div class="logo">
+        <span class="logo-badge">AS</span>
+        Aswin Suresh
+      </div>
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <button id="theme-toggle-mobile" aria-label="Toggle Dark Mode">🌙</button>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </div>
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#global" onclick="toggleMenu()">Global</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <canvas id="particles-canvas"></canvas>
+      <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1000">
+        <img src="./assets/profile-pic.jpg" alt="Aswin Suresh profile picture" />
+      </div>
+      <div class="section__text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Aswin Suresh</h1>
+        <p class="section__text__p2" id="typed-role" data-roles="Financial Data Engineer @ HDFC Bank|MBA Data Analytics Graduate|Python &amp; Power BI Enthusiast|Six Sigma White Belt">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+        <p class="section__text__p3">Chennai · India</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 magnetic" onclick="window.open('./assets/Aswin_Suresh_Resume.pdf')">
+            Download Resume
+          </button>
+          <button class="btn btn-color-1 magnetic" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/aswin-suresh-448785273/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/aswin397'" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./assets/about-pic.jpg" alt="Aswin Suresh" class="about-pic" />
+        </div>
+        <div class="about-details-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="about-containers">
+            <div class="details-container tilt-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+              <img src="./assets/checkmark.png" alt="Current role icon" class="icon" />
+              <h3>Current Role</h3>
+              <p>Financial Data Engineer<br />HDFC Bank Ltd.</p>
+            </div>
+            <div class="details-container tilt-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>MBA Data Analytics<br />BSc Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            <p>
+              I'm an MBA Data Analytics graduate and certified Six Sigma White Belt, currently working as a Financial Data Engineer at HDFC Bank Ltd., where I bridge technical data work — Python, SQL and Power BI — with business strategy to drive operational efficiency and informed decision-making.
+              My background spans full-stack software development and international business, including an Erasmus+ DAAD exchange and an internship in Germany that sharpened my cross-cultural collaboration skills.
+              I enjoy turning complex datasets into actionable insight, and I'm always looking for the next problem at the intersection of business and technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Scroll down" class="icon arrow" onclick="location.href='./#experience'" data-aos="fade-up" data-aos-duration="800" />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Explore My</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="experience-sub-title">Data Analytics &amp; BI</h2>
+            <div class="article-container">
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Python (Pandas, Seaborn, scikit-learn)</h3></div>
+                <p>Experienced</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Statistical Data Analysis</h3></div>
+                <p>Experienced</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>SQL</h3></div>
+                <p>Intermediate</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Power BI</h3></div>
+                <p>Intermediate</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Machine Learning &amp; Predictive Modeling</h3></div>
+                <p>Intermediate</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="350">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Advanced Excel</h3></div>
+                <p>Experienced</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="experience-sub-title">Business &amp; Development</h2>
+            <div class="article-container">
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Business Strategy &amp; Process Optimization</h3></div>
+                <p>Experienced</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Financial Analysis</h3></div>
+                <p>Intermediate</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Stakeholder &amp; Project Management</h3></div>
+                <p>Experienced</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Django &amp; Flask</h3></div>
+                <p>Intermediate</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Git &amp; Version Control</h3></div>
+                <p>Intermediate</p>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="350">
+                <div class="top-row"><img src="./assets/checkmark.png" alt="" class="icon" /><h3>Executive Reporting &amp; KPI Tracking</h3></div>
+                <p>Experienced</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Scroll down" class="icon arrow" onclick="location.href='./#education'" data-aos="fade-up" data-aos-duration="800" />
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">My</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Education &amp; Certifications</h1>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+          <h3>MBA — Data Analytics</h3>
+          <p class="meta">Pondicherry University, India · 2024 – 2026</p>
+          <p>Business Analytics, Financial Analysis, Marketing Strategy, Digital Marketing, Statistical Data Analysis</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
+          <h3>MBA — International Business</h3>
+          <p class="meta">KUAS, Germany</p>
+          <p>Erasmus Exchange Specialized Coursework in international business strategy and cross-cultural management, completed alongside the Erasmus+ DAAD exchange in Germany.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="250">
+          <h3>BSc — Computer Science</h3>
+          <p class="meta">University of Kerala · 2021 – 2024 · Rank Holder</p>
+          <p>Programming, Business Analysis, IoT, Data Analysis, Project Management</p>
+        </div>
+      </div>
+
+      <div class="about-containers cert-grid">
+        <div class="details-container color-container tilt-card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+          <span class="cert-badge"><img src="./assets/checkmark.png" alt="" /></span>
+          <h3>Machine Learning Fundamentals</h3><p>Alteryx · 2025</p>
+        </div>
+        <div class="details-container color-container tilt-card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+          <span class="cert-badge"><img src="./assets/checkmark.png" alt="" /></span>
+          <h3>Data Science &amp; Tools</h3><p>IBM · 2025</p>
+        </div>
+        <div class="details-container color-container tilt-card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
+          <span class="cert-badge"><img src="./assets/checkmark.png" alt="" /></span>
+          <h3>Six Sigma White Belt</h3><p>CSSC · 2025</p>
+        </div>
+        <div class="details-container color-container tilt-card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="400">
+          <span class="cert-badge"><img src="./assets/checkmark.png" alt="" /></span>
+          <h3>UGC NET Qualified</h3><p>Assistant Professor &amp; PhD Eligibility · 2025</p>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Scroll down" class="icon arrow" onclick="location.href='./#projects'" data-aos="fade-up" data-aos-duration="800" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container tilt-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="project-img-wrap"><img src="./assets/project-1.svg" alt="Supermarket Chain Analytics" class="project-img" /></div>
+            <h2 class="project-title">Supermarket Chain Analytics &amp; Strategy</h2>
+            <p class="project-desc">Used Python (Pandas, Seaborn) to analyze supermarket sales and monopolistic market ecosystems, uncovering supply-chain insights presented to academic and business panels.</p>
+          </div>
+          <div class="details-container color-container tilt-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="project-img-wrap"><img src="./assets/project-2.svg" alt="Bitcoin Prediction Analysis" class="project-img" /></div>
+            <h2 class="project-title">Bitcoin Prediction Analysis</h2>
+            <p class="project-desc">Statistical and ML-driven analysis of Bitcoin price trends to explore predictive modeling techniques for financial forecasting.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn magnetic" onclick="location.href='https://github.com/aswin397/Bitcoin-Prediction-Analysis'">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container tilt-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="project-img-wrap"><img src="./assets/project-3.svg" alt="IoT Energy System" class="project-img" /></div>
+            <h2 class="project-title">IoT Automated Energy Management</h2>
+            <p class="project-desc">Raspberry Pi + C++ + Django system that dynamically optimizes energy consumption for residential and commercial settings.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn magnetic" onclick="location.href='https://github.com/aswin397/IOTMAJORPROJECT'">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container tilt-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="project-img-wrap"><img src="./assets/project-4.svg" alt="Ecommerce Website" class="project-img" /></div>
+            <h2 class="project-title">Full-Stack Ecommerce Platform</h2>
+            <p class="project-desc">End-to-end ecommerce web application covering catalog, cart and checkout flows.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn magnetic" onclick="location.href='https://github.com/aswin397/Ecommerce'">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container tilt-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="project-img-wrap"><img src="./assets/project-5.svg" alt="Quick Commerce System" class="project-img" /></div>
+            <h2 class="project-title">Quick Commerce System</h2>
+            <p class="project-desc">Deployed as Junior Software Developer Intern at Inmakes Infotech — a Python/Django full-stack quick-commerce web application.</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Scroll down" class="icon arrow" onclick="location.href='./#global'" data-aos="fade-up" data-aos-duration="800" />
+    </section>
+
+    <section id="global">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Beyond Borders</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Global Experience</h1>
+      <div class="section-container">
+        <div class="about-details-container" data-aos="fade-right" data-aos-duration="1000">
+          <div class="about-containers">
+            <div class="details-container tilt-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+              <h3>Erasmus+ DAAD Exchange</h3>
+              <p>Selected for the Erasmus Exchange Program in Germany, gaining international business exposure and cross-cultural perspective.</p>
+            </div>
+            <div class="details-container tilt-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+              <h3>International Business Intern — KUAS, Germany</h3>
+              <p>Sept 2025 – Feb 2026 · Managed international students and events in a European multicultural setting; ran the "Data in Everyday Life" workshop and led 3 intercultural events under the Language Tandem Project.</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <p><strong>Languages</strong></p>
+            <div class="lang-pills">
+              <span class="lang-pill">English — Advanced</span>
+              <span class="lang-pill">Malayalam — Native</span>
+              <span class="lang-pill">Hindi — Working Proficiency</span>
+              <span class="lang-pill">German — A1 (CEFR)</span>
+            </div>
+          </div>
+        </div>
+        <div class="global-gallery" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="global-gallery-item"><img src="./assets/europe-1.jpg" alt="Aswin Suresh in Europe" /></div>
+          <div class="global-gallery-item"><img src="./assets/europe-2.jpg" alt="Aswin Suresh in Europe" /></div>
+          <div class="global-gallery-item"><img src="./assets/europe-3.jpg" alt="Aswin Suresh in Europe" /></div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Scroll down" class="icon arrow" onclick="location.href='./#contact'" data-aos="fade-up" data-aos-duration="800" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Get in Touch</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="contact-info-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:aswinsuresh397@gmail.com">aswinsuresh397@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="350">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/aswin-suresh-448785273/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+          <p> Chennai, India</p>
+        </div>
+      </div>
+    </section>
+
+    <footer data-aos="fade-up" data-aos-duration="800">
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#global">Global</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Aswin Suresh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({ once: true, offset: 120, easing: 'ease-out-back' });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <defs>
+    <linearGradient id="project-3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d4d3c"/>
+      <stop offset="100%" stop-color="#22c58b"/>
+    </linearGradient>
+    <pattern id="project-3-dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="360" fill="url(#project-3)"/>
+  <rect width="600" height="360" fill="url(#project-3-dots)"/>
+  <circle cx="540" cy="40" r="120" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="40" cy="330" r="90" fill="#ffffff" fill-opacity="0.06"/>
+  
+<g transform="translate(115,95)" fill="none" stroke="#ffffff" stroke-width="4">
+  <rect x="-35" y="-35" width="70" height="70" rx="10" fill="#ffffff" fill-opacity="0.15"/>
+  <circle r="18" fill="#ffe066" stroke="none"/>
+  <line x1="0" y1="-35" x2="0" y2="-55"/>
+  <line x1="0" y1="35" x2="0" y2="55"/>
+  <line x1="-35" y1="0" x2="-55" y2="0"/>
+  <line x1="35" y1="0" x2="55" y2="0"/>
+  <circle cx="0" cy="-55" r="5" fill="#ffffff" stroke="none"/>
+  <circle cx="0" cy="55" r="5" fill="#ffffff" stroke="none"/>
+  <circle cx="-55" cy="0" r="5" fill="#ffffff" stroke="none"/>
+  <circle cx="55" cy="0" r="5" fill="#ffffff" stroke="none"/>
+</g>
+
+  <text x="40" y="300" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">IoT Energy System</text>
+</svg>

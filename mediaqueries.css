@@ -1,0 +1,71 @@
+/* Aswin Suresh — Portfolio Responsive Styles */
+
+/* Large screens */
+@media screen and (max-width: 1400px) {
+  section { margin: 0 4rem; }
+  #profile { min-height: 85vh; }
+}
+
+/* Tablets / small laptops */
+@media screen and (max-width: 1200px) {
+  #desktop-nav { display: none; }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 1.5rem;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(14px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+  }
+  body.dark-mode #hamburger-nav { background: rgba(13,15,20,0.7); }
+
+  #profile { flex-direction: column; text-align: center; gap: 2rem; }
+  .section-container { flex-direction: column; align-items: center; }
+  .global-gallery { grid-template-columns: repeat(3, 1fr); max-width: 480px; margin: 0 auto; }
+  .arrow { display: none; }
+  section { margin: 0 5%; }
+  .section__pic-container { width: 280px; height: 280px; margin: 0 auto 1.5rem; }
+  #profile .section__pic-container img { border-radius: 50%; }
+  .about-containers { flex-direction: column; align-items: center; }
+  .about-containers .details-container { width: 100%; max-width: 460px; }
+  .timeline { padding-left: 1.6rem; }
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  #hamburger-nav { height: 9vh; }
+  section { margin: 0 4%; padding-top: 3rem; padding-bottom: 3rem; }
+  .title { font-size: 2.2rem; }
+  .section__text__p2 { font-size: 1.4rem; }
+  .experience-sub-title { font-size: 1.3rem; }
+  article { width: 100%; max-width: 20rem; }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  section { margin: 0 3%; }
+  #profile { min-height: 75vh; gap: 1.5rem; }
+  .section__pic-container { width: 220px; height: 220px; }
+  .about-pic { border-radius: 1.2rem; }
+  .title { font-size: 1.9rem; }
+  .section__text__p2 { font-size: 1.2rem; }
+  .btn-container .btn { width: 100%; min-width: unset; }
+  .contact-info-container { width: 100%; justify-content: center; }
+  .project-img { height: 160px; }
+  .lang-pills { justify-content: center; }
+  .logo { font-size: 1.15rem; }
+  .logo-badge { width: 36px; height: 36px; font-size: 0.95rem; }
+  #theme-toggle, #theme-toggle-mobile { width: 36px; height: 36px; font-size: 1rem; }
+}
+
+/* High contrast */
+@media (prefers-contrast: high) {
+  .btn { border: 2px solid currentColor; }
+}
